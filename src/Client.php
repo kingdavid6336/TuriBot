@@ -116,7 +116,8 @@ class Client extends Api {
                     "ok"          => false,
                     "error_code"  => json_last_error(),
                     "description" => json_last_error_msg(),
-                    "json_error"  => true
+                    "json_error"  => true,
+                    "result"      => $resultCurl
                 ];
                 $resultJson = json_decode(json_encode($arr));
             }
